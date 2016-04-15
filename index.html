@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/error.css"/>
     <script src="js/jquery-1.7.2.min.js"></script>
     <script src="js/jquery.mousewheel.js"></script>
-    <script src="js/index.js"></script>
+    <!--<script src="js/index.js"></script>-->
 </head>
 <body>
 <div class="nav">
@@ -16,10 +16,10 @@
         <a href="#" class="logo"><img src="img/logo.png" alt="慧城网络科技有限公司"/></a>
         <ul class="nav-right">
             <li><a href="#content" class="home active">首页</a></li>
-            <li><a href="404.html">慧城印刷</a></li>
+            <li><a href="http://ys.17mooc.cn/" target="_blank">慧城印刷</a></li>
             <li><a href="404.html">产品中心</a></li>
             <li><a href="404.html">代理加盟</a></li>
-            <li><a href="404.html">关于我们</a></li>
+            <li><a href="about.html">关于我们</a></li>
             <li><a href="404.html">人才招聘</a></li>
             <li class="phone"><img src="img/tel-icon.png" alt=""/><a href="tel:400-716-9088">400-716-9088</a></li>
         </ul>
@@ -74,7 +74,7 @@
                 <div style="width:380px;height:1px;margin:70px auto 20px;padding:0px;background-color:#fff;overflow:hidden;"></div>
                 <p class="page4-txt-p3">网汇优质资源 | 重塑印刷生态</p>
             </div>
-            <a href="#" class="checkout">立即下单<img src="img/arrow.png" alt=""/></a>
+            <a href="http://ys.17mooc.cn/" target="_blank" class="checkout">立即下单<img src="img/arrow.png" alt=""/></a>
         </div>
 
         <img src="img/wangge.png" alt="" class="guodu wangge"/>
@@ -154,5 +154,45 @@
             <span></span>
         </span></li>
 </ol>
+
+<script>
+    $(function () {
+        var num=0;
+        var timer=null;
+
+        var bgs = ['url("img/home-1.jpg") center no-repeat','url("img/home-2.jpg") center no-repeat','url("img/home-3.jpg") center no-repeat','url("img/home-4.jpg") center no-repeat','#fff'];
+        $('.content>div').each(function(index, element) {
+            $(element).css({'background':bgs[index]})
+        });
+        $('.content>div').eq(num).removeClass('out').siblings().addClass('out');
+
+        $(document).mousewheel(function (e,d) {
+            clearInterval(timer);
+            timer=setTimeout(fn,300);
+            function fn(){
+                num-=d;
+                if(num>4){num=4}
+                if(num<0){num=0}
+                /* $('title').html(num)*/
+                $('.content').stop().animate({top:-num*100+'%'},500);
+                $('.circle li').eq(num).addClass('current').siblings().removeClass();
+                $('.content>div').eq(num).removeClass('out').siblings().addClass('out');
+
+
+            }
+        });
+        $('.circle li').click(function () {
+            var index=$(this).index();
+            $(this).addClass('current').siblings().removeClass();
+            $('.content').stop().animate({top:-index*100+'%'},500);
+            $('.content>div').eq(index).removeClass('out').siblings().addClass('out');
+
+            num=index
+
+        })
+    });
+</script>
+
+
 </body>
 </html>

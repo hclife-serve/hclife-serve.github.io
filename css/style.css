@@ -28,7 +28,7 @@ body {
 
 .content > div {
     height: 100%;
-    background: #ff675d;
+    background: #fff;
     box-sizing: border-box;
 }
 
@@ -277,75 +277,6 @@ body {
     left: -2000px;
 }
 
-/*.page3>*{*/
-    /*background: url("../img/p3.png") no-repeat;*/
-/*}*/
-/*.page3 p{*/
-    /*width: 652px;*/
-    /*height: 358px;*/
-    /*background-position: 0 -234px;*/
-    /*margin-left: -600px;*/
-    /*margin-top: -200px;*/
-/*}*/
-/*.page3.out p{*/
-    /*margin-left:-2000px;*/
-
-/*}*/
-
-/*.page3 span:nth-of-type(1){*/
-    /*width: 203px;*/
-    /*height: 203px;*/
-    /*background-position: -372px -21px;*/
-    /*margin-left: 250px;*/
-    /*margin-top: -100px;*/
-/*}*/
-/*.page3.out span:nth-of-type(1){*/
-    /*margin-left:-800px;margin-top:920px;*/
-/*}*/
-
-/*.page3 span:nth-of-type(2){*/
-    /*width: 445px;*/
-    /*height: 447px;*/
-    /*background-position: -3px -606px;*/
-    /*margin-left: 140px;*/
-    /*margin-top: -210px;*/
-    /*transition: all 2s;*/
-    /*animation: autorun01 10s linear infinite;*/
-/*}*/
-/*@keyframes autorun01 {*/
-    /*to{*/
-        /*transform: rotate(360deg);*/
-    /*}*/
-/*}*/
-
-/*.page3 span:nth-of-type(3){*/
-    /*width: 381px;*/
-    /*height: 403px;*/
-    /*background-position: -474px -620px;*/
-    /*margin-left: 172px;*/
-    /*margin-top: -188px;*/
-    /*transition: all 2s;*/
-    /*animation: autorun02 10s linear infinite alternate;*/
-
-/*}*/
-
-/*@keyframes autorun02 {*/
-    /*to{*/
-        /*transform: rotate(-360deg);*/
-    /*}*/
-/*}*/
-
-
-/*.page3 span:nth-of-type(4){*/
-    /*width: 361px;*/
-    /*height: 362px;*/
-    /*background-position: -882px -642px;*/
-    /*margin-left: 182px;*/
-    /*margin-top: -168px;*/
-    /*transition: all 2s;*/
-    /*animation: autorun02 15s linear infinite;*/
-
-/*}*/
 
 .page4-txt{
     position: absolute;
@@ -416,46 +347,6 @@ body {
     transform: scale(1, 1);
     transition-delay: 0.5s;
 }
-
-/*.page4>*{*/
-    /*background: url("../img/p4.png")no-repeat;*/
-/*}*/
-/*.page4 span:nth-of-type(1){*/
-    /*width: 530px;*/
-    /*height: 68px;*/
-    /*background-position: 0 0;*/
-    /*margin-top: -200px;*/
-    /*margin-left: -600px;*/
-
-/*}*/
-
-/*.page4.out span:nth-of-type(1){*/
-    /*margin-left:-1000px;*/
-/*}*/
-
-/*.page4 span:nth-of-type(2){*/
-    /*width: 525px;*/
-    /*height: 370px;*/
-    /*background-position: -5px -79px;*/
-    /*margin-top: -150px;*/
-    /*margin-left: -595px;*/
-    /*transition-delay:1s;*/
-
-/*}*/
-/*.page4.out span:nth-of-type(2){*/
-    /*margin-left:-1500px;*/
-    /*opacity: 0;*/
-/*}*/
-/*.page4 p{*/
-    /*width: 611px;*/
-    /*height: 346px;*/
-    /*background-position: -566px -1px;*/
-    /*margin-top: -180px;*/
-    /*margin-left: 0;*/
-/*}*/
-/*.page4.out p{*/
-    /*margin-left:1000px;*/
-/*}*/
 
 
 .page5{
@@ -561,30 +452,84 @@ footer{
     line-height: 46px!important;
 }
 
-/*.page5>*{*/
-    /*background: url("../img/p5.png") no-repeat;*/
-/*}*/
 
-/*.page5 p{*/
-    /*width: 1077px;*/
-    /*height: 133px;*/
-    /*background-position: 0 0;*/
-    /*margin-left: -540px;*/
-    /*margin-top: -320px;*/
-/*}*/
-/*.page5.out p{*/
-    /*transform:rotate(720deg) scale(3,3);*/
-    /*opacity:0;*/
-/*}*/
-/*.page5 span{*/
-    /*width: 1004px;*/
-    /*height: 575px;*/
-    /*background-position: -38px -160px;*/
-    /*margin-left: -502px;*/
-    /*margin-top: -244px;*/
-    /*transition-delay:1s;*/
+/*关于我们*/
+.about-head{
+    height: 170px;
+    margin-top: 80px;
+    padding-top: 30px;
+    background: url("../img/about-head.jpg") no-repeat;
+}
+.about-txt{
+    width: 300px;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 auto;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+.about-txt h1{
+    font-size: 50px;
+}
+.about-txt p{
+    font-size: 24px;
+}
+.company-profile{
+}
+.company-head{
+    border-bottom: 1px solid #e6e6e6;
 
-/*}*/
-/*.page5.out span{*/
-    /*transform:rotate(720deg) scale(3,3); opacity:0;*/
-/*}*/
+}
+.company-txt{
+    box-sizing: border-box;
+    height: 140px;
+    width: 166px;
+    padding: 30px 0;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid #11b6c2;
+
+}
+.company-txt h1{
+    font-size: 40px;
+    color: #43494d;
+}
+.company-txt p{
+    font-size: 16px;
+    padding-top: 10px;
+    color: #707a80;
+}
+.company-con{
+    padding: 30px 0;
+    line-height: 30px;
+    color: #707a80;
+    font-size: 16px;
+    text-align: center;
+}
+.company-footer{
+    height: 300px;
+    text-align: center;
+    background: url("../img/about-footer.jpg") no-repeat;
+}
+.company-footer p{
+    line-height: 300px;
+    vertical-align: middle;
+    font-size: 46px;
+    color: #fff;
+}
+
+
+.contact.about{
+    height: 250px;
+}
+
+.contact.about .contact01{
+    text-align: center;
+}
+.contact.about .contact-left{
+    text-align: left;
+}
+footer.about{
+    text-align: center;
+}
